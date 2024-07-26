@@ -1,0 +1,106 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient background */
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding-top: 50px; /* Add padding at the top for spacing */
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center; /* Center align text and buttons */
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  display: inline-block;
+  width: 100px; /* Ensure labels are aligned */
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  width: calc(100% - 130px); /* Adjust width to align with labels */
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: white; 
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+}
+
+.weather-info {
+  margin: 20px 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 700px; /* Increase map container height */
+  margin-top: 20px;
+  margin-bottom: 0; /* Remove bottom margin */
+  border: 1px solid #ccc; /* Optional: add border for better visibility */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 120px); /* Adjust width for smaller screens */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .map-container {
+    height: 400px; /* Adjust map container height for smaller screens */
+  }
+}
