@@ -1,4 +1,3 @@
-Sure! Here's a sample `README.md` file for your project:
 
 ```markdown
 # Weather and Map Application
